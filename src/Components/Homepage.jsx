@@ -17,7 +17,7 @@ const Homepage = () => {
             hideProgressBar: false
         });
 
-        axios.post('http://localhost:5001/auth/message', data).then((response) => {
+        axios.post('https://backendservr.herokuapp.com/auth/message', data).then((response) => {
             console.log(response)
             setName(' ')
             setMessage(' ')

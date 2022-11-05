@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 const Adminpage = () => {
   const [details, setDetails] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:5001/auth/message').then((response) => {
+    axios.get('https://backendservr.herokuapp.com/auth/message').then((response) => {
       console.log(response.data)
       setDetails(response.data)
     })
